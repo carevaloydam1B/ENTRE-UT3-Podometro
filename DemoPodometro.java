@@ -1,9 +1,9 @@
 import java.util.Scanner;
-
 /**
  * 
  *  Clase para testear la clase Podometro
- *  
+ *  Carlos Arévalo
+ *  27-10-21
  */
 public class DemoPodometro {
 
