@@ -126,8 +126,6 @@ public class Podometro {
     /**
      * Muestra en pantalla información acerca de la distancia recorrida,
      * pasos, tiempo total caminado....
-     * 
-     *  
      */
     public void printConfiguracion() {
         System.out.println("Configuración del podómetro");
@@ -153,6 +151,7 @@ public class Podometro {
             diaMayorNumeroPasos = totalPasosSabado;
             dia = "Sabado";
         }
+        
         if (totalPasosDomingo > diaMayorNumeroPasos) {
             diaMayorNumeroPasos = totalPasosDomingo;
             dia = "Domingo";
