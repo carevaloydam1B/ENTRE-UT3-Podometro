@@ -2,7 +2,7 @@
  * La clase modela un sencillo podómetro que registra información acerca de
  * los pasos, distancia... que una persona realiza durante una semana
  * 
- * @Carlos Arévalo
+ * @ Carlos Arévalo
  * 27-10-21
  */
 public class Podometro {
@@ -58,7 +58,6 @@ public class Podometro {
     public void configurar(double queAltura, char queSexo) {
         sexo = queSexo;
         altura = queAltura;
-
         if (sexo == HOMBRE) {
             longitudZancada = queAltura * ZANCADA_HOMBRE;
         }
@@ -103,7 +102,6 @@ public class Podometro {
         }
         totalDistanciaFinSemana = (totalPasosSabado + totalPasosDomingo) * longitudZancada;
         totalDistanciaSemana = totalPasosLaborables * longitudZancada;
-
         if (horaInicio >= 2100) {
             caminatasNoche++;
         }
@@ -151,7 +149,6 @@ public class Podometro {
     public String diaMayorNumeroPasos() {
         int diaMayorNumeroPasos;
         String dia = "";
-        
         if (totalPasosLaborables > totalPasosSabado) {
             diaMayorNumeroPasos = totalPasosLaborables;
             dia = "Laborables";
@@ -160,7 +157,6 @@ public class Podometro {
             diaMayorNumeroPasos = totalPasosSabado;
             dia = "Sabado";
         }
-        
         if (totalPasosDomingo > diaMayorNumeroPasos) {
             diaMayorNumeroPasos = totalPasosDomingo;
             dia = "Domingo";
