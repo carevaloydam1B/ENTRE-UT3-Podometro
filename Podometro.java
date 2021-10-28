@@ -112,7 +112,7 @@ public class Podometro {
      * (altura, sexo y longitud de la zancada) 
      */
     public void printEstadísticas() {
-        System.out.println("Estadísticas");
+        System.out.println("Estadística");
         System.out.println("*********************************");
         System.out.println("Distancia recorrida toda la semana: " + totalDistanciaSemana / 1000 + "km");
         System.out.println("Distancia recorrida fin de semana: " + totalDistanciaFinSemana / 1000 + "km");
