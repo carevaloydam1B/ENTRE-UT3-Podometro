@@ -80,13 +80,9 @@ public class Podometro {
     int horaFin) {
         switch (dia){      
             case 1: 
-
             case 2: 
-
             case 3: 
-
             case 4: 
-
             case 5: 
                 totalPasosLaborables += pasos;
                 totalDistanciaSemana += pasos;
