@@ -160,7 +160,6 @@ public class Podometro {
         }
         System.out.println("Tiempo total caminado en la semana: " + tiempo);
         System.out.println("Día/s con más pasos caminados: " + diaMayorNumeroPasos());
-
     }
 
     /**
