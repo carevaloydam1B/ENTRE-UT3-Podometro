@@ -132,7 +132,7 @@ public class Podometro {
         System.out.println("Altura: " + altura/100 + "mtos");
         System.out.println("Sexo: " + sexo); 
         System.out.println("Longitud zancada: " + longitudZancada/100 + "mtos"); 
-    }
+        }
 
     /**
      * Muestra en pantalla la configuración del podómetro
@@ -158,6 +158,8 @@ public class Podometro {
             minutos = (minutos - 60);
             hora = (hora + 1);
         }
+        System.out.println("Tiempo total caminado en la semana: " + tiempo);
+        System.out.println("Día/s con más pasos caminados: " + diaMayorNumeroPasos());
         System.out.println("Tiempo total caminado en la semana: " + tiempo);
         System.out.println("Día/s con más pasos caminados: " + diaMayorNumeroPasos());
     }
