@@ -59,10 +59,10 @@ public class Podometro {
         sexo = queSexo;
         altura = queAltura;
         if (sexo == HOMBRE) {
-            longitudZancada = queAltura * ZANCADA_HOMBRE;
+            longitudZancada = Math.ceil(queAltura * 0.45);
         }
         else {
-            longitudZancada = queAltura * ZANCADA_MUJER;
+            longitudZancada = Math.floor(queAltura * 0.41);
         }
     }
 
@@ -116,7 +116,7 @@ public class Podometro {
         minutos = (((hora2-hora1)/100)-hora)*100;
         if(minutos>60){
             minutos = (minutos - 60);
-            hora = (hora-24);
+            hora = (hora+1);
         }
         tiempo = (hora2-hora1);
     }
@@ -129,9 +129,9 @@ public class Podometro {
         System.out.println("Configuración del podómetro");
         System.out.println("*************************");
         System.out.println();
-        System.out.println("Altura: " + altura + "mtos");
+        System.out.println("Altura: " + altura/100 + "mtos");
         System.out.println("Sexo: " + sexo); 
-        System.out.println("Longitud zancada: " + longitudZancada + "mtos"); 
+        System.out.println("Longitud zancada: " + longitudZancada/100 + "mtos"); 
     }
 
     /**
@@ -150,6 +150,14 @@ public class Podometro {
         System.out.println();
         System.out.println("Nº caminatas realizadas a partir de las 21h.: " + caminatasNoche);
         System.out.println();
+        double hora;
+        hora= Math.floor((tiempo)/100);
+        double minutos;
+        minutos = (((tiempo)/100)-hora)*100;
+        if(minutos>60){
+            minutos = (minutos - 60);
+            hora = (hora + 1);
+        }
         System.out.println("Tiempo total caminado en la semana: " + tiempo);
         System.out.println("Día/s con más pasos caminados: " + diaMayorNumeroPasos());
 
